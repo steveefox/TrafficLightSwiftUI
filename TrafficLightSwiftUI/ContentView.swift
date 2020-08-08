@@ -8,9 +8,42 @@
 
 import SwiftUI
 
+enum CurrentColor {
+    case red
+    case yellow
+    case green
+}
+
 struct ContentView: View {
+   
+    @State private var buttonTitle = "Start"
+    @State private var currentColor = CurrentColor.red
+    
+    private func switchColor() {
+        switch currentColor {
+        case .red:
+            currentColor = .yellow
+        case .yellow:
+            currentColor = .green
+        case .green:
+            currentColor = .red
+        }
+    }
+    
+}
+
+
+extension ContentView {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            ColorCircle(color: .red)
+            ColorCircle(color: .yellow)
+            ColorCircle(color: .green)
+            Spacer()
+            SwitcherColorButton(title: buttonTitle, action: {})
+            
+        }
+        .padding()
     }
 }
 
@@ -19,3 +52,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+

@@ -13,6 +13,8 @@
 		8450609C24DE9DA40017D17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8450609B24DE9DA40017D17F /* Assets.xcassets */; };
 		8450609F24DE9DA40017D17F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8450609E24DE9DA40017D17F /* Preview Assets.xcassets */; };
 		845060A224DE9DA40017D17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845060A024DE9DA40017D17F /* LaunchScreen.storyboard */; };
+		845060AA24DE9E140017D17F /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845060A924DE9E140017D17F /* ColorCircle.swift */; };
+		845060AC24DEA1560017D17F /* SwitcherColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845060AB24DEA1560017D17F /* SwitcherColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8450609E24DE9DA40017D17F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845060A124DE9DA40017D17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845060A324DE9DA40017D17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845060A924DE9E140017D17F /* ColorCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
+		845060AB24DEA1560017D17F /* SwitcherColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitcherColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				8450609524DE9DA10017D17F /* AppDelegate.swift */,
 				8450609724DE9DA10017D17F /* SceneDelegate.swift */,
 				8450609924DE9DA10017D17F /* ContentView.swift */,
+				845060AB24DEA1560017D17F /* SwitcherColorButton.swift */,
+				845060A924DE9E140017D17F /* ColorCircle.swift */,
 				8450609B24DE9DA40017D17F /* Assets.xcassets */,
 				845060A024DE9DA40017D17F /* LaunchScreen.storyboard */,
 				845060A324DE9DA40017D17F /* Info.plist */,
@@ -147,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8450609624DE9DA10017D17F /* AppDelegate.swift in Sources */,
+				845060AA24DE9E140017D17F /* ColorCircle.swift in Sources */,
 				8450609824DE9DA10017D17F /* SceneDelegate.swift in Sources */,
 				8450609A24DE9DA10017D17F /* ContentView.swift in Sources */,
+				845060AC24DEA1560017D17F /* SwitcherColorButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
