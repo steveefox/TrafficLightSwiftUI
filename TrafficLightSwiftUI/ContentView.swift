@@ -36,14 +36,31 @@ struct ContentView: View {
 extension ContentView {
     var body: some View {
         VStack {
-            ColorCircle(color: .red)
-            ColorCircle(color: .yellow)
-            ColorCircle(color: .green)
-            Spacer()
-            SwitcherColorButton(title: buttonTitle, action: {})
+            ZStack {
+            Capsule()
+                .frame(width: 150, height: 400)
+                VStack {
+                    ColorCircle(color: .red,
+                                opacity: currentColor == .red ? 1 : 0.3)
+                    ColorCircle(color: .yellow,
+                                opacity: currentColor == .yellow ? 1 : 0.3)
+                    ColorCircle(color: .green,
+                                opacity: currentColor == .green ? 1 : 0.3)
+                }
+            }
+            .padding(.bottom, -10)
+            
+            Rectangle()
+                .frame(width: 20)
+            
+            
+            SwitcherColorButton(title: buttonTitle, action: {
+                self.buttonTitle = "Next"
+                self.switchColor()
+            })
             
         }
-        .padding()
+        .padding(.bottom, 20)
     }
 }
 
